@@ -1,6 +1,7 @@
 package org.sample.dagger2.network
 
 import com.google.gson.GsonBuilder
+import com.orhanobut.logger.Logger
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -33,7 +34,7 @@ object RetrofitManager {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()
         } catch (e: GeneralSecurityException) {
-            //            LogEvent.Log(true, TAG, "RestClient Constructor = " + e.getMessage());
+            Logger.e(e, "RetrofitManager init catch")
         }
 
     }

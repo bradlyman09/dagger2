@@ -12,10 +12,6 @@ import org.sample.dagger2.viewmodels.SampleViewModelFactory
 import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
-
-    @Inject
-    lateinit var testString : String
-
     lateinit var viewmodel : MainViewmodel
 
     @Inject

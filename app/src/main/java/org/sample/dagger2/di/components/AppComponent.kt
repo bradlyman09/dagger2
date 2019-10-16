@@ -8,7 +8,6 @@ import dagger.android.support.AndroidSupportInjectionModule
 import org.sample.dagger2.SampleApplication
 import org.sample.dagger2.di.modules.ActivityBuildersModule
 import org.sample.dagger2.di.modules.AppModule
-import org.sample.dagger2.di.modules.CarModule
 import org.sample.dagger2.di.modules.ViewModelFactoryModule
 
 @Component(modules = [AndroidSupportInjectionModule::class,
@@ -17,10 +16,6 @@ import org.sample.dagger2.di.modules.ViewModelFactoryModule
         ViewModelFactoryModule::class
 ])
 interface AppComponent : AndroidInjector<SampleApplication>{
-//    fun getCar() : Car
-
-
-//    fun inject(mainActivity: MainActivity)
 
     @Component.Builder
     interface Builder{

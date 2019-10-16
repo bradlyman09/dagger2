@@ -10,12 +10,6 @@ import javax.inject.Singleton
 class AppModule {
 
     @Module companion object{
-        @JvmStatic
-        @Provides
-        fun testString() : String{
-            return "AppModule testString"
-        }
-
 //        @Singleton
         @Provides
         @JvmStatic
