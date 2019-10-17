@@ -12,5 +12,5 @@ interface ApiService{
     fun getUsers() : Maybe<List<UsersResponse>>
 
     @GET("users")
-    fun getUserById(@Query("userId") id : Int) : Maybe<List<UsersResponse>>
+    fun getUserById(@Query("id") id : Int) : Maybe<List<UsersResponse>>
 }
